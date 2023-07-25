@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+
 
 const Sidebar = () => {
     return (
@@ -16,11 +16,55 @@ const Sidebar = () => {
  {/* Sidebar content here */}
 
 <h1 className='text-2xl font-bold'>TOP CATEGORIES</h1>
- <li><Link href='/products'>All products</Link></li>
- <li><Link href='/'>Gents Fashion</Link></li>
+ <li><Link href='/products'>
+    <div className="mt-4 select">
+      <option>All Products</option>
+</div></Link></li>
+ <div className="mt-4 ml-4">
+  <div className="">
+    <select className="select ">
+      <option disabled selected>Gents Fashion</option>
+      <option>T-shirts</option>
+      <option>Shoes</option>
+    </select>
+   
+  </div>
+</div>
+ <div className="mt-4 ml-4">
+  <div className="">
+    <select className="select ">
+      <option disabled selected>Gents Fashion</option>
+      <option>T-shirts</option>
+      <option>Shoes</option>
+    </select>
+   
+  </div>
+</div>
+ <div className="mt-4 ml-4">
+  <div className="">
+    <select className="select ">
+      <option disabled selected>Ladies Fashion</option>
+      <option>T-shirts</option>
+      <option>Sharee</option>
+      <option>Shoes</option>
+    </select>
+   
+  </div>
+</div>
+ <div className="mt-4 ml-4">
+  <div className="">
+    <select className="select ">
+      <option disabled selected>Kids Section</option>
+      <option>T-shirts</option>
+      <option>Shoes</option>
+    </select>
+   
+  </div>
+</div>
+ {/* <li><Link href='/'>Gents Fashion</Link></li>
  <li><Link href='/'>Ladies Fashion</Link></li>
  <li><Link href='/'>Kids Section</Link></li>
- <li><Link href='/'>Couple Set</Link></li>
+ <li><Link href='/'>Couple Set</Link></li> */}
 </ul>
 
 
