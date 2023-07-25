@@ -129,7 +129,7 @@ a {
 }
 .shop-container{
   display: grid;
-  grid-template-columns: 4fr 2fr;
+  grid-template-columns: 4fr 1fr;
 }
 .btn-cart{
   width: 100%;

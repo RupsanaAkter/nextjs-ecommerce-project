@@ -16,6 +16,7 @@ const Sidebar = () => {
  {/* Sidebar content here */}
 
 <h1 className='text-2xl font-bold'>TOP CATEGORIES</h1>
+ <li><Link href='/products'>All products</Link></li>
  <li><Link href='/'>Gents Fashion</Link></li>
  <li><Link href='/'>Ladies Fashion</Link></li>
  <li><Link href='/'>Kids Section</Link></li>
