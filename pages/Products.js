@@ -11,7 +11,7 @@ const Products = () => {
         .then(data=>setProducts(data))
     },[])
         return (
-            <div className=''>
+            <div className='mt-10'>
                 
     
                 <div className="grid grid-cols-4 gap-5">

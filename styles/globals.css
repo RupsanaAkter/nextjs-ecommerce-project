@@ -154,3 +154,6 @@ a {
   transform: scale(2); /* Apply the magnify effect on click */
   cursor: zoom-out;
 }
+.sidebar{
+  height: 575px;
+}
