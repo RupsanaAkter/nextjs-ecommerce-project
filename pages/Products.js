@@ -2,7 +2,7 @@
 
 import Allproducts from './Allproducts';
 import { useEffect, useState } from 'react';
-import Cart from './cart';
+import Cart from './Cart';
 import { addToDb, getShoppingCart } from './utilities'
 const Products = () => {
     const [products,setProducts]=useState([]);

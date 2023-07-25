@@ -7,7 +7,7 @@ const Productsdetails = () => {
     return (
         <main className={`${styles.main} ${inter.className}`}>
             
-           <section className='mt-20 ml-20 shop-container'>
+           <section className='mt-20 ml-20 shop-container '>
            <div className=" card w-96 bg-base-100">
   
   <div className="card-body">
@@ -41,17 +41,82 @@ const Productsdetails = () => {
 
  
            </div>
-           <div className='font-bold text-blue-800'>Thanks</div> 
+          
            </section>
+
+           <h1 className='pt-20 pl-20 font-bold'>Comments</h1>
+
+         <div>
+         <div className='flex' >
+          <div className="avatar placeholder pt-10 pl-20">
+  <div className="bg-neutral-focus text-neutral-content rounded-full w-8">
+    <span className="text-xs">AA</span>
+  </div>
+</div>
+<div>
+    <h1 className='pl-2 pt-11 font-bold'>Abram Akra</h1>
+   </div>
+        </div>
+       <h1 className='pl-20'>Totally its good products</h1> 
+        </div>
+ 
+         <div>
+         <div className='flex' >
+          <div className="avatar placeholder pt-10 pl-20">
+  <div className="bg-neutral-focus text-neutral-content rounded-full w-8">
+    <span className="text-xs">JH</span>
+  </div>
+</div>
+<div>
+    <h1 className='pl-2 pt-11 font-bold'>John Hor</h1>
+   </div>
+        </div>
+       <h1 className='pl-20'>Wow</h1> 
+        </div>
+ 
+         <div>
+         <div className='flex' >
+          <div className="avatar placeholder pt-10 pl-20">
+  <div className="bg-neutral-focus text-neutral-content rounded-full w-8">
+    <span className="text-xs">PK</span>
+  </div>
+</div>
+<div>
+    <h1 className='pl-2 pt-11 font-bold'>Provash Kir</h1>
+   </div>
+        </div>
+       <h1 className='pl-20'>very good products</h1> 
+        </div>
+ 
+         <div>
+         <div className='flex' >
+          <div className="avatar placeholder pt-10 pl-20">
+  <div className="bg-neutral-focus text-neutral-content rounded-full w-8">
+    <span className="text-xs">KB</span>
+  </div>
+</div>
+<div>
+    <h1 className='pl-2 pt-11 font-bold'>Kabir Bora</h1>
+   </div>
+        </div>
+       <h1 className='pl-20'>Best Products</h1> 
+        </div>
+ 
+          
+
+
+
+
+
           <div>
-    <h1 className='pt-20 pl-20 font-bold'>Comments</h1>
     <div>
            
             <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs mt-5 ml-20" />
         </div>
           </div>
 
-         
+          
+
 
         </main>
     );
