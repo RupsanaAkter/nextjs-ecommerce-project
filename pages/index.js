@@ -8,6 +8,7 @@ import Navbar from './Navbar'
 import Baselayout from './Baselayout'
 import Slider from './Slider'
 import Footer from './Footer'
+import MainSection from './MainSection'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <Navbar></Navbar>
        <Baselayout> <Slider></Slider> </Baselayout>
        {/* <Products></Products> */}
+       <MainSection></MainSection>
        <Footer></Footer>
       </div>
       </main>

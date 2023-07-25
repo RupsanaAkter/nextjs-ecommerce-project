@@ -33,9 +33,9 @@ const Sidebar = () => {
  <div className="mt-4 ml-4">
   <div className="">
     <select className="select ">
-      <option disabled selected>Gents Fashion</option>
-      <option>T-shirts</option>
-      <option>Shoes</option>
+      <option disabled selected>Couple set</option>
+      <option>Sharee</option>
+      <option>Panjabi</option>
     </select>
    
   </div>
