@@ -19,7 +19,7 @@ const Products = () => {
                         products.map(product => <Allproducts
                             key={product.id}
                             product={product}
-                            handleAddToCart={handleAddToCart}
+                            // handleAddToCart={handleAddToCart}
                         ></Allproducts>)
                     }
                 </div>
