@@ -4,13 +4,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] })
 const Productsdetails = () => {
-    
+    const handleAddToCart=()=>{
+console.log('click');
+    }
     return (
         <main className={`${styles.main} ${inter.className}`}>
             
            <section className='mt-20 ml-20 shop-container'>
            <div className=" card w-96 bg-base-100">
-  {/* <figure><Image src='/images/img2.jpeg' width={200} height={200} alt=''></Image></figure> */}
+  
   <div className="card-body">
     <h2 className="font-bold">Description: <span className='font-thin'> We believe in supporting our local economy and helping to </span></h2>
     <p>Size: S M XL XXL</p>
