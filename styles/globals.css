@@ -120,6 +120,7 @@ a {
 .layout__main-content {
   flex-grow: 1
 }
+
 .product {
   width: 300px;
   height: 510px;
