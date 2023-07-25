@@ -34,9 +34,9 @@ console.log('click');
   <input type="radio" name="rating-2" className="bg-orange-400 mask mask-star-2" />
 </div>
 <div className="justify-center pt-7 card-actions">
-<button onClick={() => handleAddToCart(props.product)} className='font-bold text-black btn-cart btn btn-outlet'>
-                Buy now
-                {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
+<button className='font-bold text-black btn-cart btn btn-outlet'>
+               
+                
                 </button>
     </div>
   </div>
@@ -44,7 +44,7 @@ console.log('click');
 
  
            </div>
-           <div className=''>card</div> 
+           <div className='font-bold text-blue-800'>Thanks</div> 
            </section>
           <div>
     <Link href='/comments'><h1 className='pt-20 pl-20 font-bold'>Comments</h1></Link>
