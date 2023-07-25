@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 
@@ -26,7 +27,9 @@ const navbar = () => {
 </div>
         </ul>
     </div>
-    <a className="text-xl normal-case btn btn-ghost">Logo</a>
+    
+      <Image src='/images/logo.png' width={50} height={50} alt=""></Image>
+  
   </div>
   <div className="hidden navbar-center lg:flex">
     <ul className="px-1 menu menu-horizontal">
