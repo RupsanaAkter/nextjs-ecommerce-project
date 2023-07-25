@@ -13,10 +13,10 @@ const Allproducts = (props) => {
             </Link>
             </div>
             <div className='ml-14'>
-                <h6 className='product-name'>{name}</h6>
-                <p>Price: ${price}</p>
-                <p>Manufacturer: {seller}</p>
-                <p>Rating: {ratings} Stars</p>
+                <h6 className='font-bold text-sky-600'>{name}</h6>
+                <p className="font-bold">Price: ${price}</p>
+                <p className="font-bold">Manufacturer: {seller}</p>
+                <p className="font-bold text-rose-600"> More..</p>
             </div>
            {/* <Link href='/blog'> */}
            <button onClick={() => handleAddToCart(props.product)} className='btn-cart btn-outline'>
