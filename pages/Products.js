@@ -53,8 +53,12 @@ const Products = () => {
         return (
             <div className='mt-10 ml-10 shop-container'>
                 
+                <div className="cart-container">
+                
+                <Cart cart={cart}></Cart>
+            </div>
     
-                <div className="grid grid-cols-3 gap-4 ">
+                <div className="lg:grid lg:grid-cols-3 sm:grid-cols-1 gap-4  ">
                     {
                         products.map(product => <Allproducts
                             key={product.id}
@@ -64,10 +68,7 @@ const Products = () => {
                     }
                 </div>
                 
-                <div className="cart-container">
-                
-                <Cart cart={cart}></Cart>
-            </div>
+               
             </div>
     );
 };

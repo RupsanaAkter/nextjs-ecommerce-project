@@ -129,7 +129,13 @@ a {
 }
 .shop-container{
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 1fr 4fr;
+}
+@media screen and (max-width: 768px) {
+  /* For screens with a maximum width of 768px (small devices) */
+  .shop-container {
+    grid-template-columns: 1fr; /* Set to 1 column for small devices */
+  }
 }
 .btn-cart{
   width: 100%;

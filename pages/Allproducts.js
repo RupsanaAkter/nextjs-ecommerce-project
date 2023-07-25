@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Allproducts = (props) => {
     console.log(props.product);
-    const { img, name, seller, price,review } = props.product;
+    const { img, name, seller, price} = props.product;
     const handleAddToCart = props.handleAddToCart;
     return (
       
@@ -25,7 +25,7 @@ const Allproducts = (props) => {
            
             <button onClick={() => handleAddToCart(props.product)} className='btn-cart btn btn-outlet'>
                 Add to Cart
-                {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
+               
                 </button>
                 
                  
