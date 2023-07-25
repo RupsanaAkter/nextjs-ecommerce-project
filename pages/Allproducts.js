@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Allproducts = (props) => {
     console.log(props.product);
-    const { img, name, seller, price } = props.product;
+    const { img, name, seller, price,review } = props.product;
     const handleAddToCart = props.handleAddToCart;
     return (
       
@@ -17,6 +17,7 @@ const Allproducts = (props) => {
                 <h6 className='font-bold text-sky-600'>{name}</h6>
                 <p className="font-bold">Price: ${price}</p>
                 <p className="font-bold">Manufacturer: {seller}</p>
+               
                 <Link href='/Productsdetails'>
                 <h1 className="text-red-600 font-bold">More..</h1>
                 </Link>

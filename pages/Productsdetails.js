@@ -1,12 +1,9 @@
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Image from 'next/image';
-import Link from 'next/link';
+
 const inter = Inter({ subsets: ['latin'] })
 const Productsdetails = () => {
-    const handleAddToCart=()=>{
-console.log('click');
-    }
+ 
     return (
         <main className={`${styles.main} ${inter.className}`}>
             
@@ -47,7 +44,11 @@ console.log('click');
            <div className='font-bold text-blue-800'>Thanks</div> 
            </section>
           <div>
-    <Link href='/comments'><h1 className='pt-20 pl-20 font-bold'>Comments</h1></Link>
+    <h1 className='pt-20 pl-20 font-bold'>Comments</h1>
+    <div>
+           
+            <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs mt-5 ml-20" />
+        </div>
           </div>
 
          
