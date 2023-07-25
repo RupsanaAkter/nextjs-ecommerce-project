@@ -127,10 +127,10 @@ a {
   border-radius: 8px;
   position: relative;
 }
-/* .shop-container{
+.shop-container{
   display: grid;
-  grid-template-columns: 4fr 1fr;
-} */
+  grid-template-columns: 4fr 2fr;
+}
 .btn-cart{
   width: 100%;
   background:rgb(192 38 211);;

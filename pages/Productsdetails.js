@@ -8,7 +8,8 @@ const Productsdetails = () => {
     return (
         <main className={`${styles.main} ${inter.className}`}>
             
-            <div className=" card w-96 bg-base-100">
+           <section className='mt-20 ml-20 shop-container'>
+           <div className=" card w-96 bg-base-100">
   {/* <figure><Image src='/images/img2.jpeg' width={200} height={200} alt=''></Image></figure> */}
   <div className="card-body">
     <h2 className="font-bold">Description: <span className='font-thin'> We believe in supporting our local economy and helping to </span></h2>
@@ -30,21 +31,24 @@ const Productsdetails = () => {
   <input type="radio" name="rating-2" className="bg-orange-400 mask mask-star-2" />
   <input type="radio" name="rating-2" className="bg-orange-400 mask mask-star-2" />
 </div>
-<div className="justify-center card-actions">
-      <button className="btn btn-primary">Buy Now</button>
+<div className="justify-center pt-7 card-actions">
+<button onClick={() => handleAddToCart(props.product)} className='font-bold text-black btn-cart btn btn-outlet'>
+                Buy now
+                {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
+                </button>
     </div>
-    </div>
+  </div>
   
+
  
- 
-</div>
+           </div>
+           <div className=''>card</div> 
+           </section>
+          <div>
+    <Link href='/comments'><h1 className='pt-20 pl-20 font-bold'>Comments</h1></Link>
+          </div>
 
-
-
-<div>
-    <Link href='/comments'><h1 className='pt-20'>Comments</h1></Link>
-</div>
-
+         
 
         </main>
     );
