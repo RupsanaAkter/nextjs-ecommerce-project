@@ -166,5 +166,18 @@ a {
   cursor: zoom-out;
 }
 .sidebar{
-  height: 575px;
+  height: 615px;
+}
+@media screen and (max-width: 768px) {
+.slider{
+height: 200px;
+width: 230px;
+margin-bottom: 0;
+padding-bottom: 0;
+  }
+  .buttn{
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+  }
 }
