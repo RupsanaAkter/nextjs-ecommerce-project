@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const MainSection = () => {
     return (
-      <section className="grid grid-cols-3 gap-3 mt-20">
+      <section className="grid grid-cols-3 gap-3 mt-20 sm:grid grid-cols-1">
           <div className="card w-96 shadow-xl mt-10 ">
         
         <figure>

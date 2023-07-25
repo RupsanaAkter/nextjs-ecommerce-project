@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Sidebar = () => {
     return (
-        <section className="flex mt-10">
+        <section className=" mt-10 ">
         <div className="drawer lg:drawer-open">
 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
 <div className="drawer-content w-50% ">
