@@ -7,7 +7,7 @@ const Productsdetails = () => {
     return (
         <main className={`${styles.main} ${inter.className}`}>
             
-           <section className='mt-20 ml-20 shop-container '>
+           <section className='mt-20 lg:ml-20  sm:ml-2 shop-container '>
            <div className=" card w-96 bg-base-100">
   
   <div className="card-body">
@@ -111,7 +111,7 @@ const Productsdetails = () => {
           <div>
     <div>
            
-            <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs mt-5 ml-20" />
+            <input type="text" placeholder="Type here" className="input input-bordered lg:w-full sm:w-1/2 max-w-xs mt-5 ml-20" />
         </div>
           </div>
 

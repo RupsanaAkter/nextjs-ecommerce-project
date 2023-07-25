@@ -4,7 +4,7 @@ const Slider = () => {
     return (
            
               <div>
-                <h1 className="mt-10 mb-10 ml-10 text-5xl font-bold text-cyan-950">WELCOME</h1>
+                <h1 className="ml-10 text-xl font-bold text-cyan-950">WELCOME</h1>
                  <div className="ml-10 mt-13">
           
           <div className="w-full carousel">

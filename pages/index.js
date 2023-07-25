@@ -21,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/images/logo.png" />
       </Head>
      <main className={`${styles.main} ${inter.className}`}> 
-      <div className='mx-20'>
+      <div className=''>
       <Navbar></Navbar>
        <Baselayout> <Slider></Slider> </Baselayout>
        {/* <Products></Products> */}
