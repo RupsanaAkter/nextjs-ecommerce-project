@@ -2,6 +2,7 @@ import Navbar from './Navbar'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Head from 'next/head';
+import Footer from './Footer';
 const inter = Inter({ subsets: ['latin'] })
 const About = () => {
     return (
@@ -15,7 +16,8 @@ const About = () => {
      <main className={`${styles.main} ${inter.className}`}> 
         <Navbar></Navbar>
         <div>
-            <h1>This is About</h1>
+            <h1 className='text-5xl font-bold text-center'>This is About</h1>
+            <Footer></Footer>
         </div>
        </main>
        </>
