@@ -24,7 +24,8 @@ export default function Home() {
       <div className=''>
       <Navbar></Navbar>
        <Baselayout> <Slider></Slider> </Baselayout>
-       {/* <Products></Products> */}
+       
+       
        <MainSection></MainSection>
        <Footer></Footer>
       </div>
