@@ -1,55 +1,23 @@
 "use client"
 
-import {createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile} from 'firebase/auth';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { createContext, useEffect, useState } from 'react';
+import auth from '.firebase.init';
+// import app from './firebase.init';
 
-export const AuthContext = createContext();
-const auth = getAuth(app)
+
+
 const Authprovider = ({children}) => {
-    const [user, setUser] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const createUser = (email, password) =>{
-        setLoading(true);
-        return createUserWithEmailAndPassword(auth, email, password);
+    const [user, loading] = useAuthState(auth);
+    // const location = useLocation();
+
+    // if(loading){
+    //     return <Loading></Loading>
+    // }
+
+    if(!user){
+        return <Navigate to="/login" state={{ from: location }} replace></Navigate>
     }
-
-    const signIn = (email, password) =>{
-        setLoading(true);
-        return signInWithEmailAndPassword(auth, email, password);
-    }
-
-    const updateUser = (userInfo) =>{
-        return updateProfile(user, userInfo);
-    }
-
-    const logOut = () =>{
-        setLoading(true);
-        return signOut(auth);
-    }
-
-    useEffect( () =>{
-        const unsubscribe = onAuthStateChanged(auth, currentUser =>{
-            console.log('user observing');
-            setUser(currentUser);
-            setLoading(false);
-        });
-
-        return () => unsubscribe();
-    }, [])
-
-    const authInfo = {
-        createUser,
-        signIn,
-        updateUser,
-        logOut,
-        user,
-        loading
-    }
-    return (
-        <AuthContext.Provider value={authInfo}>
-            {children}
-        </AuthContext.Provider>
-    );
+    return children;
 };
-
 export default Authprovider;
